@@ -5,8 +5,8 @@ from pymongo.server_api import ServerApi
 # Función para conectar a la base de datos MongoDB
 def connect_to_mongodb(uri, db_name, collection_name):
     client = MongoClient(uri, server_api=ServerApi('1'))
-    db = client[db_name]
-    collection = db[collection_name]
+    db = client[proyectoHIS]
+    collection = db[patients]
     return collection
 
 # Función para guardar el JSON en MongoDB
