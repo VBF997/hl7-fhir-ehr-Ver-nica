@@ -31,7 +31,7 @@ def WritePatient(patient_dict: dict):
         return "errorInserting", None
     
 
- def GetPatientByIdentifier(patientSystem, patientValue):
+def GetPatientByIdentifier(patientSystem, patientValue):
     try:
         print(f"🔍 Buscando en MongoDB con system={patientSystem}, value={patientValue}")  
         patient = collection.find_one({"identifier.system": patientSystem, "identifier.value": patientValue})  
