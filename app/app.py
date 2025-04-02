@@ -29,7 +29,7 @@ async def get_patient_by_id(patient_id: str):
     print(f"🔍 Buscando paciente con ID: {patient_id}")
     status, patient = GetPatientById(patient_id)
     
-    if status == 'success':F
+    if status == 'success':
         return patient
     elif status == 'notFound':
         raise HTTPException(status_code=404, detail="Patient not found")
