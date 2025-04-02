@@ -45,4 +45,4 @@ def WritePatient(patient_dict: dict):
         return "notFound", None
     except Exception as e:
         print(f"❌ Error: {str(e)}")  # <-- Log del error exacto
-        return f"error:{str(e)}", None
+        return f"error:{str(e)}",None
